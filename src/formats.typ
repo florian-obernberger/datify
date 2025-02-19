@@ -34,7 +34,7 @@
   let uppercase-month = upper(full-month)
 
   // Short name for months, i.e January = Jan
-  let short-month-name =  if full-month.len() > 3 { safe-slice(full-month, 3) } else { full-month }
+  let short-month-name =  if capitalized-month.len() > 3 { safe-slice(capitalized-month, 3) } else { capitalized-month }
 
   // Format the arg format in the right form and returns it.
   let formatted = format
